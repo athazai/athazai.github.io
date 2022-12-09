@@ -18,6 +18,7 @@ body {
     font-family: 'Abril Fatface', cursive;
     color: black;
     background: #111111;
+    scroll-behavior: smooth;
 }
 
 body::-webkit-scrollbar{
@@ -46,9 +47,13 @@ body::-webkit-scrollbar{
 
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .navbar-item {
     margin: 0 70px;
-    transition: var(--transition);
+    transition: all 400ms ease-in-out;
     font-size: 1.1vw;
     color: #e5e5e5;
 }
@@ -437,6 +442,18 @@ body::-webkit-scrollbar{
 #gambaratha{
     width: 30vw;
 }
+
+#puter {
+    padding: 1.5vw;
+    font-size: 1vw;
+    text-align: center;
+    letter-spacing: 1px;
+    background-color: #e5e5e5;
+  }
+
+  #scroll-projects {
+    transition: ;
+  }
 
 /* Responsive */
 
