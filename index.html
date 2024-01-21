@@ -2,412 +2,296 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Athallah's Portfolio</title>
-
     <link rel="stylesheet" href="css/style.css" />
-
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="src/Altinn-DINExp.sfd" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap"
-      rel="stylesheet"
-    />
-
-    <link
-      rel="stylesheet"
-      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
-    />
+    <title>Athallah's Portfolio</title>
   </head>
   <body>
-    <!-- navbar -->
-    <nav>
-      <ul class="navbar-list">
-        <li class="logo">
-          <strong>
-            <a href="#">AZQ.</a>
-          </strong>
-        </li>
-        <!-- <li class="toogle">
-                <img src="img/burger-menu.png" alt="bar">
-            </li> -->
-        <li class="navbar-item">
-          <a href="#scroll-aboutme" class="navbar-link">About Me</a>
-        </li>
-        <li class="navbar-item">
-          <a href="#scroll-experience" class="navbar-link">Experience</a>
-        </li>
-        <li class="navbar-item">
-          <a href="#scroll-projects" class="navbar-link">Projects</a>
-        </li>
-      </ul>
-    </nav>
-    <!-- end navbar -->
-
-    <!-- header -->
-    <header>
-      <div class="bg-image-header">
-        <img id="image-header" src="img/ayeta.png" alt="Athallah" />
-      </div>
-        <div class="header__content">
-          <h1 class="header__title">
-            <span>WELCOME TO</span> <br> MY PORTFOLIO
-          </h1>
-          <p class="header__text">
-            I'm an Android & Front-end Web Developer <br />
-            <br />
-            Based in Indonesia
-          </p>
-          <!-- <a href="#scroll-benefit" class="btn_start" style="color: #e5e5e5; margin-left: 10px; ">Let's have a look! ⬇️ </a> -->
+    <nav
+      id="navbar"
+      class="fixed top-0 left-0 transition-all duration-300 right-0 z-50 sm:pb-7 sm:pt-5 flex w-full sm:h-[90px] px-[24px] py-[8px] sm:py-[0px] sm:px-[32px] xl:px-[48px] justify-between"
+    >
+      <div
+        class="navbar-list z-50 flex w-full h-fit sm:h-auto justify-start items-center"
+      >
+        <div
+          class="navbar-item-beranda flex-col justify-center items-center inline-flex"
+          data-route="beranda"
+        >
+          <div
+            class="text-gray-900 hover:text-gray-700 font-normal no-underline"
+          >
+            <a href="#" class="text-[14px]">Atha_</a>
+          </div>
         </div>
+      </div>
+      <div
+        class="w-auto hidden md:flex justify-between items-center gap-[64px]"
+      >
+        <div class="text-gray-900 hover:text-gray-700 font-normal no-underline">
+          <a
+            href="#about"
+            class="text-[18px] letter-spacing-[1.5px]"
+            onclick="smoothScroll('about')"
+            >About.</a
+          >
+        </div>
+        <div class="text-gray-900 hover:text-gray-700 font-normal no-underline">
+          <a
+            href="#work"
+            class="text-[18px] letter-spacing-[1.5px]"
+            onclick="smoothScroll('work')"
+            >Work.</a
+          >
+        </div>
+        <div class="text-gray-900 hover:text-gray-700 font-normal no-underline">
+          <a
+            href="#contact"
+            class="text-[18px] letter-spacing-[1.5px]"
+            onclick="smoothScroll('contact')"
+            >Contact.</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <header
+      class="h-screen flex flex-col justify-center md:justify-between md:gap-[60px]"
+    >
+      <img
+        src="img/bg-me.png"
+        class="w-full h-screen object-cover object-right"
+        alt=""
+      />
+
+      <div
+        class="absolute bottom-[24px] sm:bottom-[48px] left-[24px] sm:left-[48px]"
+      >
+        <p class="text-[12px]">Android / Web Developer</p>
+      </div>
     </header>
-    <!-- end Header -->
 
-    <!-- target scroll -->
-    <div id="scroll-aboutme"></div>
+    <div id="about" class="pt-[95px]"></div>
+    <div class="w-full flex flex-col p-[24px] sm:px-[48px] gap-[24px]">
+      <p
+        class="w-full flex justify-end text-[16px] md:text-[18px] font-bold text-stone-800"
+      >
+        About.
+      </p>
+      <p class="text-[25px] w-[65%] text-stone-800 font-semibold leading-[1.7]">
+        Front-end Developer / Android Developer with 2+ years of experience in
+        Web & Android Development. <br />
+        <br />
+        Committed to staying updated with industry 4.0 standards and using my
+        skills in Web / Android Development to create a substantial impact on
+        the industry. <br />
+        <br />
+        Possesses excellent teamwork and collaboration skills, ensuring
+        effective communication and coordination within a team environment.
+      </p>
+    </div>
 
-    <main>
-      <article>
-        <section class="about-me">
-          <div class="aboutme__header">
-            <h1>ABOUT ME</h1>
+    <div id="work" class="pt-[95px]"></div>
+    <div class="w-full flex flex-col p-[24px] sm:px-[48px] gap-[24px]">
+      <p
+        class="w-full flex justify-end text-[16px] md:text-[18px] font-bold text-stone-800"
+      >
+        Work.
+      </p>
+      <div class="w-full h-full flex flex-col justify-between gap-[48px]">
+        <div class="w-full h-auto flex flex-col gap-[24px]">
+          <p
+            class="text-[30px] md:text-[58px] text-stone-800 font-bold leading-[1.7]"
+          >
+            STARSPACE
+          </p>
+          <a
+            href="https://starspace.telkomsat.co.id/"
+            class="w-full flex flex-col items-center justify-center"
+          >
+            <img
+              class="w-[65%] transition duration-300 transform hover:scale-105"
+              src="img/starspace.png"
+              alt=""
+            />
+          </a>
+          <div class="w-full flex flex-col justify-center items-center">
+            <p
+              class="w-[65%] pt-[32px] font-bold flex justify-center text-center"
+            >
+              Laravel · JavaScript · HTML · Tailwind CSS · Flowbite · jQuery ·
+              API · LeafletJS
+            </p>
+            <p
+              class="w-[65%] pt-[16px] text-[18px] flex justify-center text-center"
+            >
+              During my internship at PT Telkomsat, I was assigned to create a
+              website for advertise PT Telkomsat's products.
+            </p>
           </div>
-
-          <div class="aboutme__row">
-            <img id="gambaratha" src="img/kuaye.png" alt="">
-            <div class="grid-item-aboutme">
-              <div class="grid__item__experiences__nama__aboutme">
-                <p>Athallah Zaidan Ariq</p>
-              </div>
-              <div class="grid__item__experiences__desk__aboutme">
-                <p>A boy who interested with <br> Apps Development (especially in Kotlin) & Design </p>
-              </div>
-
-              <div class="aboutme__icon">
-                <div class="icon__column">
-                  <i class="uil uil-google" style="color: #e5e5e5"></i>
-                  <br /><br />
-                  <i class="uil uil-linkedin" style="color: #e5e5e5"></i>
-                  <br /><br />
-                  <i class="uil uil-github" style="color: #e5e5e5"></i>
-                  <br /><br />
-                  <i class="uil uil-instagram" style="color: #e5e5e5"></i>
-                  <br /><br />
-                </div>
-
-                <div class="aboutme__iconcolumn">
-                  <div class="aboutme__icontext">
-                    <p>athallahzaidan90@gmail.com</p>
-                  </div>
-
-                  <div class="aboutme__icontext">
-                    <a
-                      href="https://www.linkedin.com/in/athallah-zaidan/"
-                      target="_blank"
-                      ><p>/athallah-zaidan</p></a
-                    >
-                  </div>
-
-                  <div class="aboutme__icontext">
-                    <a href="https://github.com/Athazai" target="_blank"
-                      ><p>/Athazai</p></a
-                    >
-                  </div>
-
-                  <div class="aboutme__icontext">
-                    <a href="https://instagram.com/athallah_zaq" target="_blank"
-                      ><p>@athallah_zaq</p></a
-                    >
-                  </div>
-                </div>
-
-                
-              </div>
+        </div>
+        <div class="w-full h-auto flex flex-col gap-[24px]">
+          <p
+            class="text-[30px] md:text-[58px] text-stone-800 font-bold leading-[1.7]"
+          >
+            SCHOOL'S WEB
+          </p>
+          <a
+            href="https://starspace.telkomsat.co.id/"
+            class="w-full flex flex-col items-center justify-center"
+          >
+            <img
+              class="w-[65%] transition duration-300 transform hover:scale-105"
+              src="img/school-web.png"
+              alt=""
+            />
+          </a>
+        </div>
+        <div class="w-full flex flex-col justify-center items-center">
+          <p
+            class="w-[65%] pt-[32px] font-bold flex justify-center text-center"
+          >
+            Laravel · HTML · Vanilla CSS · JavaScript
+          </p>
+          <p
+            class="w-[65%] pt-[16px] text-[18px] flex justify-center text-center"
+          >
+            When i was participating in the Project-Based Virtual Intern: Mobile
+            Apps Developer Schoters x Rakamin Academy. I was responsible for
+            creating News Apps for the final task. And my role involves
+            designing User Interfaces and developing server-side logic
+          </p>
+        </div>
+        <div class="w-full h-auto flex flex-col gap-[24px]">
+          <p
+            class="text-[30px] md:text-[58px] text-stone-800 font-bold leading-[1.7]"
+          >
+            NEWS APP
+          </p>
+          <a
+            href="https://github.com/athazai/VIX-Schoters-Athallah-Zaidan-Ariq"
+            class="w-full flex flex-col items-center justify-center"
+          >
+            <div class="border-[2px] w-[65%] overflow-hidden">
+              <img
+                class="transition duration-300 transform hover:scale-105"
+                src="img/news-app.png"
+                alt=""
+              />
             </div>
+            <div class="w-full flex flex-col justify-center items-center">
+              <p
+                class="w-[65%] pt-[32px] font-bold flex justify-center text-center"
+              >
+                Kotlin · API
+              </p>
+              <p
+                class="w-[65%] pt-[16px] text-[18px] flex justify-center text-center"
+              >
+                When i was participating in the Project-Based Virtual Intern:
+                Mobile Apps Developer Schoters x Rakamin Academy. I was
+                responsible for creating News Apps for the final task. And my
+                role involves designing User Interfaces and developing
+                server-side logic
+              </p>
+            </div>
+          </a>
+        </div>
+        <div class="w-full h-auto flex flex-col gap-[24px]">
+          <p
+            class="text-[30px] md:text-[58px] text-stone-800 font-bold leading-[1.7]"
+          >
+            NOTES APP
+          </p>
+          <a
+            href="https://github.com/athazai/ToDoListApp"
+            class="w-full flex flex-col items-center justify-center"
+          >
+            <div class="border-[2px] w-[65%] overflow-hidden">
+              <img
+                class="transition duration-300 transform hover:scale-105"
+                src="img/notes-app.png"
+                alt=""
+              />
+            </div>
+          </a>
+          <div class="w-full flex flex-col justify-center items-center">
+            <p
+              class="w-[65%] pt-[32px] font-bold flex justify-center text-center"
+            >
+              Kotlin
+            </p>
+            <p
+              class="w-[65%] pt-[16px] text-[18px] flex justify-center text-center"
+            >
+              One of my project for semester assignment
+            </p>
           </div>
-        </section>
+        </div>
+      </div>
+    </div>
 
-        <!-- target scroll -->
-        <div id="scroll-experience"></div>
+    <div id="contact" class="pt-[95px]"></div>
+    <div class="w-full flex flex-col p-[24px] sm:p-[48px] gap-[24px]">
+      <p
+        class="w-full flex justify-end text-[16px] md:text-[18px] font-bold text-stone-800"
+      >
+        Contact.
+      </p>
+      <div class="w-full h-auto flex flex-col gap-[16px]">
+        <div class="flex flex-col">
+          <p
+            class="text-[30px] md:text-[58px] text-stone-800 flex items-center font-bold leading-[1.7]"
+          >
+            GET IN TOUCH?
+          </p>
+          <p class="text-stone-800">Project?</p>
+          <p class="text-stone-800">Collaboration?</p>
+          <p class="text-stone-800">Or whatever</p>
+        </div>
+        <div class="w-[80%] h-[1px] bg-stone-800"></div>
+        <div class="w-full h-auto flex flex-col">
+          <p class="text-stone-800 font-medium">Find me at</p>
+          <a href="" class="text-stone-800 underline hover:underline-offset-2"
+            >@athallahzaidan90@gmail.com</a
+          >
+          <a
+            href="linkedin.com/in/athallah-zaidan"
+            class="text-stone-800 underline hover:underline-offset-2"
+            >linkedin.com/in/athallah-zaidan</a
+          >
+        </div>
+      </div>
+    </div>
 
-        <section class="experience">
-          <div class="experiences__header">
-            <h1>EXPERIENCES</h1>
-          </div>
+    <footer></footer>
 
-          <div class="grid-container">
-            <div class="grid-item">
-              <div class="grid__item__experiences__tahun">
-                <p>2022</p>
-              </div>
-              <div class="grid__item__experiences__nama">
-                <p>Coding Class Mentor</p>
-              </div>
-              <!-- <div class="grid__item__experiences__img">
-                <img src="img/akungajar.png" alt="">
-              </div> -->
-              <div class="grid__item__experiences__desk">
-                <p>
-                  At the Muslim Fest 2022 event, Alhazen Academy opened a Coding
-                  Class, <br />
-                  and I had an opportunity to be the mentor at that event.
-                </p>
-              </div>
-            </div>
-            <div class="grid-item">
-              <div class="grid__item__experiences__tahun">
-                <p>2022</p>
-              </div>
-              <div class="grid__item__experiences__nama">
-                <p>X-RPL Teaching Mission</p>
-              </div>
-              <div class="grid__item__experiences__desk">
-                <p>
-                  At this event, we (Software Engineer class) challenged
-                  ourselves to share the knowledge that we had gained during 1
-                  year of studying at school, we opened a training with Flutter
-                  & UIUX material, located in Sleman, Yogyakarta
-                </p>
-              </div>
-            </div>
-            <div class="grid-item">
-              <div class="grid__item__experiences__tahun">
-                <p>2021 & 2022</p>
-              </div>
-              <div class="grid__item__experiences__nama">
-                <p>Webinar</p>
-              </div>
-              <div class="grid__item__experiences__desk">
-                <ul style="margin-left: 1rem;">
-                  <li>Rest API News</li>
-                  <br />
-                  <li>Talking about RecyclerView in Android</li>
-                  <br />
-                  <li>My Journey as an Android Developer</li>
-                </ul>
-              </div>
-            </div>
-            <div class="grid-item">
-              <div class="grid__item__experiences__tahun">
-                <p>2021 & 2022</p>
-              </div>
-              <div class="grid__item__experiences__nama">
-                <p>Application Projects (8+)</p>
-              </div>
-              <div class="grid__item__experiences__desk">
-                <p>
-                  Recipes App, Covid-19 App, Alarm App, Dzikir App, Notes App,
-                  Kisah Nabi & Rasul App, <br />
-                  Portfolio App, Detik.com App, Chat App, etc.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
+    <script>
+      function smoothScroll(targetId) {
+        const target = document.getElementById(targetId);
+        target.scrollIntoView({ behavior: "smooth" });
+      }
+    </script>
 
-        <!-- target scroll -->
-        <div id="scroll-projects"></div>
-
-        <section class="projects">
-          <div class="projects__header">
-            <h1>PROJECTS</h1>
-          </div>
-
-          <div class="grid-projects-row">
-
-            <div class="grid-item-projects">
-              <div class="img__projects">
-                <img id="imagegrid" src="img/ahpku/Alarm App.png" alt="Alarm App">
-                </div>
-                <div class="grid-item-column-projects">
-                  <div class="grid-item-projects-text">
-                    <p>Alarm App</p>
-                </div>
-                <div class="grid-item-projects-desk">
-                  <p>An App that can manage remind you all of your schedule, just add your schedule <br> and you'll get notification when the time has come </p>
-              </div>
-
-              <div class="grid-item-projects-tech">
-                <p>Technologies</p>
-            </div>
-
-            <div class="grid-item-projects-list">
-              <ul>
-                <li class="item">RecyclerView</li>
-                <li class="item">Intent</li> 
-                <li class="item">Lifecyle Service</li> 
-                <li class="item">Room</li> 
-                <li class="item">CRUD</li> 
-                <li class="item">Date & Time</li> 
-              </ul>
-            </div>
-
-                </div>  
-            </div>
-
-            <div class="grid-item-projects">
-              <div class="img__projects">
-                <img id="imagegrid" src="img/ahpku/Notes App.png" alt="Alarm App">
-                </div>
-                <div class="grid-item-column-projects">
-                  <div class="grid-item-projects-text">
-                    <p>Notes App</p>
-                </div>
-                <div class="grid-item-projects-desk">
-                  <p>if you are a forgetful person, this app is suitable for you <br> you can write somthing important and see it again if you forget it
-              </div>
-
-              <div class="grid-item-projects-tech">
-                <p>Technologies</p>
-            </div>
-
-            <div class="grid-item-projects-list">
-              <ul>
-                <li class="item">CRUD</li>
-                <li class="item">RecyclerView</li> 
-                <li class="item">Floating Action Button</li> 
-                <li class="item">Appbar Menu</li> 
-                <li class="item">SearchView</li> 
-                <li class="item">Intent</li> 
-              </ul>
-            </div>
-
-                </div>  
-            </div>
-
-            <div class="grid-item-projects">
-              <div class="img__projects">
-                <img id="imagegrid" src="img/ahpku/Story Nabi App.png" alt="Alarm App">
-                </div>
-                <div class="grid-item-column-projects">
-                  <div class="grid-item-projects-text">
-                    <p>Prophet & Rasul Story App</p>
-                </div>
-                <div class="grid-item-projects-desk">
-                  <p>Interested with our Prophet / Rasul Story? this app can help you to read their story <br> and you can find 25 Prophet & Rasul story in this app</p>
-              </div>
-
-              <div class="grid-item-projects-tech">
-                <p>Technologies</p>
-            </div>
-
-            <div class="grid-item-projects-list">
-              <ul>
-                <li class="item">RecyclerView</li>
-                <li class="item">TabLayout</li> 
-                <li class="item">ViewPager</li> 
-                <li class="item">API</li> 
-                <li class="item">Intent with Object</li> 
-                <li class="item">JSON & GSON </li> 
-              </ul>
-            </div>
-
-                </div>  
-            </div>
-
-            <div class="grid-item-projects">
-              <div class="img__projects">
-                <img id="imagegrid" src="img/ahpku/News App.png" alt="Alarm App">
-                </div>
-                <div class="grid-item-column-projects">
-                  <div class="grid-item-projects-text">
-                    <p>News App</p>
-                </div>
-                <div class="grid-item-projects-desk">
-                  <p>An App that can manage your daily activities, you can use for write something <br> and you'll get notification when the time has come </p>
-              </div>
-
-              <div class="grid-item-projects-tech">
-                <p>Technologies</p>
-            </div>
-
-            <div class="grid-item-projects-list">
-              <ul>
-                <li class="item">RecyclerView</li>
-                <li class="item">Intent</li> 
-                <li class="item">Lifecyle Service</li> 
-                <li class="item">API</li> 
-                <li class="item">JSON & GSON</li> 
-                <li class="item">SearchView</li> 
-              </ul>
-            </div>
-
-                </div>  
-            </div>
-
-            <div class="grid-item-projects">
-              <div class="img__projects">
-                <img id="imagegrid" src="img/ahpku/Recipes App.png" alt="Alarm App">
-                </div>
-                <div class="grid-item-column-projects">
-                  <div class="grid-item-projects-text">
-                    <p>Recipes App</p>
-                </div>
-                <div class="grid-item-projects-desk">
-                  <p>An App that can manage remind you all of your schedule, just add your schedule <br> and you'll get notification when the time has come </p>
-              </div>
-
-              <div class="grid-item-projects-tech">
-                <p>Technologies</p>
-            </div>
-
-            <div class="grid-item-projects-list">
-              <ul>
-                <li class="item">RecyclerView</li>
-                <li class="item">Intent</li> 
-                <li class="item">API</li> 
-                <li class="item">JSON & GSON</li> 
-                <li class="item">Fragment & Navigation</li> 
-                <li class="item">Bottom Navigation</li> 
-              </ul>
-            </div>
-
-                </div>  
-            </div>
-
-            <div class="grid-item-projects">
-              <div class="img__projects">
-                <img id="imagegrid" src="img/ahpku/Dzikir App.png" alt="Alarm App">
-                </div>
-                <div class="grid-item-column-projects">
-                  <div class="grid-item-projects-text">
-                    <p>Dzikir App</p>
-                </div>
-                <div class="grid-item-projects-desk">
-                  <p>An App that can manage remind you all of your schedule, just add your schedule <br> and you'll get notification when the time has come </p>
-              </div>
-
-              <div class="grid-item-projects-tech">
-                <p>Technologies</p>
-            </div>
-
-            <div class="grid-item-projects-list">
-              <ul>
-                <li class="item">RecyclerView</li>
-                <li class="item">Intent</li> 
-                <li class="item">ViewPager</li> 
-                <li class="item">Data String</li> 
-              </ul>
-            </div>
-
-                </div>  
-            </div>
-
-          </div>
-  
-          
-
-          </div>
-
-
-        </section>
-      </article>
-
-      <footer id="puter">
-        <p>Athallah's Portfolio 2022</p>
-    </footer>
-      
-    </main>
+    <script>
+      window.addEventListener("scroll", function () {
+        const navbar = document.getElementById("navbar");
+        if (window.scrollY > 0) {
+          navbar.classList.remove("bg-transparent");
+          navbar.classList.add("backdrop-blur-sm", "bg-opacity-20", "bg-white");
+        } else {
+          navbar.classList.remove(
+            "backdrop-blur-sm",
+            "bg-opacity-20",
+            "bg-whie"
+          );
+          navbar.classList.add("bg-transparent");
+        }
+      });
+    </script>
   </body>
 </html>
