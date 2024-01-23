@@ -3,15 +3,72 @@
     padding: 0;
     border: 0;
     outline: 0;
+    marker: none;
     box-sizing: border-box;
     text-decoration: none;
 }
   
 body {
-    font-family: 'ABCFavorite', sans-serif;
+    font-family: 'TTHoves', sans-serif;
+    color: 0e0e0;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+body::-webkit-scrollbar{
+  display: none;
+}
+
+#about{
+  transition: all 400ms ease-in-out;
 }
 
 @font-face {
     font-family: ABCFavorite;
     src: url(/font/ABCFavoritMono-Book.otf);
 }
+
+@font-face {
+    font-family: TTHoves;
+    src: url(/font/TTHovesProTrial-Regular.ttf);
+}
+
+.kontainer {
+    align-items: center;
+    overflow: hidden;
+    user-select: none;
+  }
+  
+  .scroll {
+    white-space: nowrap;
+  }
+  
+  .scroll div {
+    display: flex;
+  }
+
+  .RightToLeft {
+    animation: RightToLeft 30s infinite linear;
+  }
+  
+  @keyframes  RightToLeft {
+    from {
+      transform: translateX(0%);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+  
+  .LeftToRight {
+    animation: LeftToRight 30s infinite linear;
+  }
+  
+  @keyframes  LeftToRight {
+    from {
+      transform: translateX(-50%);
+    }
+    to {
+      transform: translateX(0%);
+    }
+  }
