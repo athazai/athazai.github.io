@@ -9,7 +9,7 @@
 }
   
 body {
-    font-family: 'TTHoves', sans-serif;
+    font-family: 'SFMono', sans-serif;
     color: 0e0e0;
     -ms-overflow-style: none;
     scrollbar-width: none;
@@ -32,6 +32,12 @@ body::-webkit-scrollbar{
     font-family: TTHoves;
     src: url(/font/TTHovesProTrial-Regular.ttf);
 }
+
+@font-face {
+  font-family: SFMono;
+  src: url(/font/SF-Mono.dmg);
+}
+
 
 .kontainer {
     align-items: center;
