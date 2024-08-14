@@ -19,6 +19,10 @@ body::-webkit-scrollbar{
   display: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 #about{
   transition: all 400ms ease-in-out;
 }
