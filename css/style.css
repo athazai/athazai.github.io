@@ -1,21 +1,21 @@
-*{
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
-    marker: none;
-    box-sizing: border-box;
-    text-decoration: none;
-}
-  
-body {
-    font-family: 'SFMono', sans-serif;
-    color: 0e0e0;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  marker: none;
+  box-sizing: border-box;
+  text-decoration: none;
 }
 
-body::-webkit-scrollbar{
+body {
+  font-family: "SFMono", sans-serif;
+  color: 0e0;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
   display: none;
 }
 
@@ -23,18 +23,37 @@ html {
   scroll-behavior: smooth;
 }
 
-#about{
+/* @keyframes fade {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+#image-transition {
+  animation: fade 0.5s ease-in-out;
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+  -webkit-transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+  -ms-transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+  -webkit-animation: fade 0.5s ease-in-out;
+} */
+
+#about {
   transition: all 400ms ease-in-out;
 }
 
 @font-face {
-    font-family: ABCFavorite;
-    src: url(/font/ABCFavoritMono-Book.otf);
+  font-family: ABCFavorite;
+  src: url(/font/ABCFavoritMono-Book.otf);
 }
 
 @font-face {
-    font-family: TTHoves;
-    src: url(/font/TTHovesProTrial-Regular.ttf);
+  font-family: TTHoves;
+  src: url(/font/TTHovesProTrial-Regular.ttf);
 }
 
 @font-face {
@@ -42,43 +61,42 @@ html {
   src: url(/font/SF-Mono.dmg);
 }
 
-
 .kontainer {
-    align-items: center;
-    overflow: hidden;
-    user-select: none;
-  }
-  
-  .scroll {
-    white-space: nowrap;
-  }
-  
-  .scroll div {
-    display: flex;
-  }
+  align-items: center;
+  overflow: hidden;
+  user-select: none;
+}
 
-  .RightToLeft {
-    animation: RightToLeft 30s infinite linear;
+.scroll {
+  white-space: nowrap;
+}
+
+.scroll div {
+  display: flex;
+}
+
+.RightToLeft {
+  animation: RightToLeft 30s infinite linear;
+}
+
+@keyframes RightToLeft {
+  from {
+    transform: translateX(0%);
   }
-  
-  @keyframes  RightToLeft {
-    from {
-      transform: translateX(0%);
-    }
-    to {
-      transform: translateX(-50%);
-    }
+  to {
+    transform: translateX(-50%);
   }
-  
-  .LeftToRight {
-    animation: LeftToRight 30s infinite linear;
+}
+
+.LeftToRight {
+  animation: LeftToRight 30s infinite linear;
+}
+
+@keyframes LeftToRight {
+  from {
+    transform: translateX(-50%);
   }
-  
-  @keyframes  LeftToRight {
-    from {
-      transform: translateX(-50%);
-    }
-    to {
-      transform: translateX(0%);
-    }
+  to {
+    transform: translateX(0%);
   }
+}
