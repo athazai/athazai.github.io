@@ -3,246 +3,197 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
-    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="src/Altinn-DINExp.sfd" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <script src="https://kit.fontawesome.com/b802362ecd.js" crossorigin="anonymous"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/b802362ecd.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Athallah's Portfolio</title>
   </head>
   <body>
-    <nav
-      id="navbar"
-      class="fixed top-0 left-0 transition-all duration-300 right-0 z-50 sm:pb-7 sm:pt-5 flex w-full sm:h-[90px] px-[24px] py-[8px] sm:py-[0px] sm:p-[32px] xl:p-[48px] justify-between"
-    >
-      <div
-        class="navbar-list z-50 flex w-full h-fit sm:h-auto justify-start items-center"
-      >
-        <div
-          class="navbar-item-beranda flex-col justify-center items-center inline-flex"
-          data-route="beranda"
+    <header class="w-full h-screen flex items-center justify-center">
+      <div class="(top-0 sticky)">
+        <p
+          onclick="navigateToHome()"
+          id="resizeText"
+          class="text-slate-900 block font-bold text-[5em] tracking-[-3px] cursor-pointer text-center"
         >
-          <div class="text-gray-900 hover:text-gray-700 no-underline">
-            <a
-              href="#"
-              class="hidden md:flex text-[32px] font-medium tracking-[-1px]"
-              >Athallah Zaidan<span class="text-gray-500">.</span></a
-            >
-            <a
-              href="#"
-              class="flex md:hidden text-[32px] font-medium tracking-[-1px]"
-              >Atha.</a
-            >
-          </div>
-        </div>
-      </div>
-      <div
-        class="w-auto hidden md:flex justify-between items-center gap-[64px]"
-      >
-        <div class="text-gray-900 hover:text-gray-700 font-normal no-underline ">
-          <a
-            href="#about"
-            class="text-[18px] font-medium"
-            onclick="smoothScroll('about')"
-            >About<span class="text-gray-500">.</span></a
-          >
-        </div>
-        <div class="text-gray-900 hover:text-gray-700 font-normal no-underline">
-          <a
-            href="#work"
-            class="text-[18px] font-medium"
-            onclick="smoothScroll('work')"
-            >Work<span class="text-gray500">.</span></a
-          >
-        </div>
-        <div class="text-gray-900 hover:text-gray-700 font-normal no-underline">
-          <a
-            href="#contact"
-            class="text-[18px] font-medium"
-            onclick="smoothScroll('contact')"
-            >Contact<span class="text-gray-500">.</span></a
-          >
-        </div>
-      </div>
-    </nav>
-
-    <header
-      class="h-screen flex flex-col justify-center md:justify-between md:gap-[60px] overflow-hidden"
-    >
-      <div
-        class="w-[40%] hidden lg:hidden text-white lg:text-black top-[22%] lg:top-[20%] left-[45%] absolute z-10"
-      >
-        <p class="">Based In</p>
-        <p class="text-[17.5px]">
-          Indonesia<span class="text-gray-500">.</span>
-        </p>
-      </div>
-
-      <div
-        class="w-[100%] sm:w-fit absolute sm:left-[32px] lg:left-[48px] sm:bottom-[32px] xl:bottom-[16px]"
-      >
-        <p class="text-gray-900 text-[25px] hidden sm:block md:text-[50px] xl:text-[100px] font-black">
-          LET'S MAKE THE <br> UN<del>BORING</del> PROJECTS!
-        </p>
-        <p class="text-gray-900 text-[25px] sm:hidden font-black text-center">
-          Portfolio.
+          Atha.
         </p>
       </div>
     </header>
 
-    <div id="about" class="pt-[195px]"></div>
-    <div
-      class="w-full flex flex-col p-[24px] items-center sm:px-[48px] gap-[64px]"
-    >
-      <p
-        class="w-full flex justify-end text-[16px] md:text-[18px] font-semibold text-stone-800"
-      >
-        About<span class="text-gray500">.</span>
-      </p>
-      <p
-        class="text-[20px] lg:text-[25px] w-[85%] lg:w-[50%] text-center text-stone-800 font-normal leading-[1.7]"
-      >
-        Software Engineer with 1+ years of experience in Front-End Web & 
-        Android Development. <br />
-        <br />
-        Committed to staying updated with industry 4.0 standards and using my
-        skills in Web / Android Development to create a substantial impact on
-        the industry. <br />
-        <br />
-        Possesses excellent teamwork and collaboration skills, ensuring
-        effective communication and coordination within a team environment.
-      </p>
-    </div>
-
     <div id="work" class="pt-[195px]"></div>
     <div class="w-full flex flex-col py-[24px] sm:px-[48px] gap-[64px]">
       <p
-        class="w-full flex justify-end text-[16px] md:text-[18px] px-[24px] lg:py-0 font-semibold text-stone-800"
+        class="w-full flex justify-end text-[16px] text-stone-800 md:text-[18px] px-[24px] lg:py-0 font-semibold"
       >
         Works<span class="text-gray-500">.</span>
       </p>
-      
-      <div class="w-full h-full flex flex-col justify-between gap-24 lg:gap-36">
 
+      <div class="w-full h-full flex flex-col justify-between gap-24 lg:gap-36">
         <div class="w-full flex flex-col sm:gap-[48px]">
-          <p class="w-fit text-gray-900 md:text-[50px] font-black mx-[24px] lg:mx-0 py-[2px] px-[12px] border sm:border-0 rounded-full">
+          <p
+            class="w-fit text-gray-900 md:text-[50px] font-black mx-[24px] lg:mx-0 py-[2px] px-[12px] border sm:border-0 rounded-full"
+          >
             WEB
           </p>
-          <a onclick="navigateToStarspace()" rel="noopener noreferrer" class="cursor-pointer">
-            <div class="relative w-full h-auto transition duration-300 transform hover:scale-105 flex flex-row justify-between border-b-2 py-[24px] lg:py-[0px] lg:border-2 border-slate-700 lg:rounded-full px-[32px] group">
-                <p class="text-[25px] lg:text-[58px] text-stone-800 font-medium leading-[1.7]">
-                    STARSPACE
-                </p>
-                <img
-                    src="/img/starspace/starspace.png"
-                    alt="Hover Image"
-                    class="mt-[-20%] inset-0 hidden lg:block w-[40%] h-[40%] right-0 object-cover opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100 "
-                />
-                <i class="fa-solid fa-arrow-right items-center flex md:text-[25px] "></i>
+          <a
+            onclick="navigateToStarspace()"
+            rel="noopener noreferrer"
+            class="cursor-pointer"
+          >
+            <div
+              class="relative w-full h-auto transition duration-300 transform hover:scale-105 flex flex-row justify-between border-b-2 py-[24px] lg:py-[0px] lg:border-2 border-slate-700 lg:rounded-full px-[32px] group"
+            >
+              <p
+                class="text-[25px] lg:text-[58px] text-stone-800 font-medium leading-[1.7]"
+              >
+                STARSPACE
+              </p>
+              <img
+                src="/img/starspace/starspace.png"
+                alt="Hover Image"
+                class="mt-[-20%] inset-0 hidden lg:block w-[40%] h-[40%] right-0 object-cover opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100"
+              />
+              <i
+                class="fa-solid fa-arrow-right items-center flex md:text-[25px]"
+              ></i>
             </div>
           </a>
-  
-          <a onclick="navigateToSchoolWeb()" rel="noopener noreferrer" class="cursor-pointer">
-            <div class="relative w-full h-auto transition duration-300 transform hover:scale-105 flex flex-row justify-between border-b-2 py-[24px] lg:py-[0px] lg:border-2 border-slate-700 lg:rounded-full px-[32px] group">
-                <p class="text-[25px] lg:text-[58px] text-stone-800 font-medium leading-[1.7]">
-                    IDNBS WEB
-                </p>
-                <img
-                    src="/img/schoolweb/school-web.png"
-                    alt="Hover Image"
-                    class="mt-[-20%] inset-0 hidden lg:block w-[40%] h-[40%] right-0 object-cover opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100"
-                />
-                <i class="fa-solid fa-arrow-right items-center flex md:text-[25px]"></i>
+
+          <a
+            onclick="navigateToSchoolWeb()"
+            rel="noopener noreferrer"
+            class="cursor-pointer"
+          >
+            <div
+              class="relative w-full h-auto transition duration-300 transform hover:scale-105 flex flex-row justify-between border-b-2 py-[24px] lg:py-[0px] lg:border-2 border-slate-700 lg:rounded-full px-[32px] group"
+            >
+              <p
+                class="text-[25px] lg:text-[58px] text-stone-800 font-medium leading-[1.7]"
+              >
+                IDNBS WEB
+              </p>
+              <img
+                src="/img/schoolweb/school-web.png"
+                alt="Hover Image"
+                class="mt-[-20%] inset-0 hidden lg:block w-[40%] h-[40%] right-0 object-cover opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100"
+              />
+              <i
+                class="fa-solid fa-arrow-right items-center flex md:text-[25px]"
+              ></i>
             </div>
           </a>
         </div>
 
         <div class="w-full flex flex-col sm:gap-[48px]">
-          <p class="w-fit text-gray-900 md:text-[50px] font-black mx-[24px] lg:mx-0 py-[2px] px-[12px] border sm:border-0 rounded-full">
+          <p
+            class="w-fit text-gray-900 md:text-[50px] font-black mx-[24px] lg:mx-0 py-[2px] px-[12px] border sm:border-0 rounded-full"
+          >
             APPS
           </p>
-  
-          <a onclick="navigateToNewsApp()" rel="noopener noreferrer" class="cursor-pointer">
-            <div class="relative w-full h-auto transition duration-300 transform hover:scale-105 flex flex-row justify-between border-b-2 py-[24px] lg:py-[0px] lg:border-2 border-slate-700 lg:rounded-full px-[32px] group">
-                <p class="text-[25px] md:text-[58px] text-stone-800 font-medium leading-[1.7]">
-                    NEWS APP
-                </p>
-                <img
-                    src="/img/newsapp/newsapp.png"
-                    alt="Hover Image"
-                    class="mt-[-20%] inset-0 hidden lg:block w-[30%] h-[30%] right-0 object-cover opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100"
-                />
-                <i class="fa-solid fa-arrow-right items-center flex md:text-[25px]"></i>
+
+          <a
+            onclick="navigateToNewsApp()"
+            rel="noopener noreferrer"
+            class="cursor-pointer"
+          >
+            <div
+              class="relative w-full h-auto transition duration-300 transform hover:scale-105 flex flex-row justify-between border-b-2 py-[24px] lg:py-[0px] lg:border-2 border-slate-700 lg:rounded-full px-[32px] group"
+            >
+              <p
+                class="text-[25px] lg:text-[58px] text-stone-800 font-medium leading-[1.7]"
+              >
+                NEWS APP
+              </p>
+              <img
+                src="/img/newsapp/newsapp.png"
+                alt="Hover Image"
+                class="mt-[-20%] inset-0 hidden lg:block w-[30%] h-[30%] right-0 object-cover opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100"
+              />
+              <i
+                class="fa-solid fa-arrow-right items-center flex md:text-[25px]"
+              ></i>
             </div>
           </a>
-          <a onclick="navigateToNotesApp()" rel="noopener noreferrer" class="cursor-pointer">
-            <div class="relative w-full h-auto transition duration-300 transform hover:scale-105 flex flex-row justify-between border-b-2 py-[24px] lg:py-[0px] lg:border-2 border-slate-700 lg:rounded-full px-[32px] group">
-                <p class="text-[25px] md:text-[58px] text-stone-800 font-medium leading-[1.7]">
-                    NOTES APP
-                </p>
-                <img
-                    src="/img/notesapp/notesapp.png"
-                    alt="Hover Image"
-                    class="mt-[-20%] inset-0 hidden lg:block w-[30%] h-[30%] right-0 object-cover opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100"
-                />
-                <i class="fa-solid fa-arrow-right items-center flex md:text-[25px]"></i>
+          <a
+            onclick="navigateToNotesApp()"
+            rel="noopener noreferrer"
+            class="cursor-pointer"
+          >
+            <div
+              class="relative w-full h-auto transition duration-300 transform hover:scale-105 flex flex-row justify-between border-b-2 py-[24px] lg:py-[0px] lg:border-2 border-slate-700 lg:rounded-full px-[32px] group"
+            >
+              <p
+                class="text-[25px] lg:text-[58px] text-stone-800 font-medium leading-[1.7]"
+              >
+                NOTES APP
+              </p>
+              <img
+                src="/img/notesapp/notesapp.png"
+                alt="Hover Image"
+                class="mt-[-20%] inset-0 hidden lg:block w-[30%] h-[30%] right-0 object-cover opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100"
+              />
+              <i
+                class="fa-solid fa-arrow-right items-center flex md:text-[25px]"
+              ></i>
             </div>
           </a>
-          <a onclick="navigateToAlarmApp()" rel="noopener noreferrer" class="cursor-pointer">
-            <div class="relative w-full h-auto transition duration-300 transform hover:scale-105 flex flex-row justify-between border-b-2 py-[24px] lg:py-[0px] lg:border-2 border-slate-700 lg:rounded-full px-[32px] group">
-                <p class="text-[25px] md:text-[58px] text-stone-800 font-medium leading-[1.7]">
-                    ALARM APP
-                </p>
-                <img
-                    src="/img/alarmapp/alarmapp.png"
-                    alt="Hover Image"
-                    class="mt-[-20%] inset-0 hidden lg:block w-[30%] h-[30%] right-0 object-cover opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100"
-                />
-                <i class="fa-solid fa-arrow-right items-center flex md:text-[25px]"></i>
-            </div>
-          </a>
-          <a onclick="navigateToRecipesApp()" rel="noopener noreferrer" class="cursor-pointer">
-            <div class="relative w-full h-auto transition duration-300 transform hover:scale-105 flex flex-row justify-between border-b-2 py-[24px] lg:py-[0px] lg:border-2 border-slate-700 lg:rounded-full px-[32px] group">
-                <p class="text-[25px] md:text-[58px] text-stone-800 font-medium leading-[1.7]">
-                    RECIPES APP
-                </p>
-                <img
-                    src="/img/recipesapp/recipesapp.png"
-                    alt="Hover Image"
-                    class="mt-[-20%] inset-0 hidden lg:block w-[30%] h-[30%] right-0 object-cover opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100"
-                />
-                <i class="fa-solid fa-arrow-right items-center flex md:text-[25px]"></i>
-            </div>
-          </a>
-          <a onclick="navigateToRasulApp()" rel="noopener noreferrer" class="cursor-pointer">
-            <div class="relative w-full h-auto transition duration-300 transform hover:scale-105 flex flex-row justify-between border-b-2 py-[24px] lg:py-[0px] lg:border-2 border-slate-700 lg:rounded-full px-[32px] group">
-                <p class="text-[25px] md:text-[58px] text-stone-800 font-medium leading-[1.7]">
-                    PROPHET APP
-                </p>
-                <img
-                    src="/img/rasulapp/rasulapp.png"
-                    alt="Hover Image"
-                    class="mt-[-20%] inset-0 hidden lg:block w-[30%] h-[30%] right-0 object-cover opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100"
-                />
-                <i class="fa-solid fa-arrow-right items-center flex md:text-[25px]"></i>
+          <a
+            onclick="navigateToAlarmApp()"
+            rel="noopener noreferrer"
+            class="cursor-pointer"
+          >
+            <div
+              class="relative w-full h-auto transition duration-300 transform hover:scale-105 flex flex-row justify-between border-b-2 py-[24px] lg:py-[0px] lg:border-2 border-slate-700 lg:rounded-full px-[32px] group"
+            >
+              <p
+                class="text-[25px] lg:text-[58px] text-stone-800 font-medium leading-[1.7]"
+              >
+                ALARM APP
+              </p>
+              <img
+                src="/img/alarmapp/alarmapp.png"
+                alt="Hover Image"
+                class="mt-[-20%] inset-0 hidden lg:block w-[30%] h-[30%] right-0 object-cover opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100"
+              />
+              <i
+                class="fa-solid fa-arrow-right items-center flex md:text-[25px]"
+              ></i>
             </div>
           </a>
         </div>
       </div>
     </div>
 
-    <div id="contact" class="pt-[95px] transition-all duration-500 ease-in-out"></div>
+    <div
+      id="contact"
+      class="pt-[95px] transition-all duration-500 ease-in-out"
+    ></div>
     <div class="w-full flex flex-col p-[24px] sm:p-[48px] gap-[64px]">
       <p
         class="w-full flex justify-end text-[16px] md:text-[18px] font-semibold text-stone-800"
       >
-        Contact<span class="text-gray500">.</span>
+        Contact<span class="text-gray-500">.</span>
       </p>
       <div class="w-full h-auto flex flex-col gap-[16px]">
         <div class="flex flex-col">
           <p
-            class="text-[20px] md:text-[58px] text-stone-800 font-medium flex items-center leading-[1.7]"
+            class="text-[20px] lg:text-[58px] text-stone-800 font-medium flex items-center leading-[1.7]"
           >
             GET IN TOUCH?
           </p>
@@ -277,6 +228,39 @@
             </div>
           </div>
         </div>
+        <!-- <div class="w-full h-full flex justify-between items-end">
+        <div
+          class="w-full h-fit flex justify-end items-end pr-[72px] pb-[64px]"
+        >
+          <div
+            id="chatBubble"
+            class="chat chat-end opacity-0 transition-all duration-700"
+          >
+            <p class="chat-bubble max-w-[100%] text-gray-200 flex items-center">
+              Hello, Fellas
+              <span
+                id="clock"
+                class="chat-footer opacity-50 text-[12px] pt-[15px] w-fit flex items-end justify-end pl-[24px]"
+              ></span>
+            </p>
+          </div>
+          <div class="avatar indicator">
+            <span
+              id="typingIndicator"
+              class="indicator-item badge badge-secondary bg-gray-600 border border-gray-600 text-white py-[12px] px-[15px]"
+            >
+              <span class="animate-pulse">typing…</span>
+            </span>
+            <div class="h-20 w-20 rounded-[100%] border border-[2.5px]">
+              <img
+                class="mt-[5px] p-[5px]"
+                alt="Atha"
+                src="img/atha-tiramisu.png"
+              />
+            </div>
+          </div>
+        </div>
+      </div> -->
       </div>
     </div>
 
@@ -289,7 +273,8 @@
       }
     </script>
 
-    <script>
+    <!-- BLUR BG NAVBAR -->
+    <!-- <script>
       window.addEventListener("scroll", function () {
         const navbar = document.getElementById("navbar");
         if (window.scrollY > 0) {
@@ -304,36 +289,106 @@
           navbar.classList.add("bg-transparent");
         }
       });
+    </script> -->
+
+    <script>
+      function navigateToHome() {
+        window.location.href = "index.html"; // Redirects to starspace.html
+      }
+
+      function navigateToAbout() {
+        window.location.href = "about.html"; // Redirects to starspace.html
+      }
+
+      function navigateToWorks() {
+        window.location.href = "works.html"; // Redirects to starspace.html
+      }
+
+      function navigateToStarspace() {
+        window.location.href = "starspaceWORKS.html"; // Redirects to starspace.html
+      }
+
+      function navigateToSchoolWeb() {
+        window.location.href = "schoolwebWORKS.html"; // Redirects to school web.html
+      }
+
+      function navigateToNewsApp() {
+        window.location.href = "newsappWORKS.html"; // Redirects to school web.html
+      }
+
+      function navigateToNotesApp() {
+        window.location.href = "notesappWORKS.html"; // Redirects to school web.html
+      }
+
+      function navigateToAlarmApp() {
+        window.location.href = "alarmappWORKS.html"; // Redirects to school web.html
+      }
+
+      function navigateToRecipesApp() {
+        window.location.href = "recipesappWORKS.html"; // Redirects to school web.html
+      }
+
+      function navigateToRasulApp() {
+        window.location.href = "prophetrasulWORKS.html"; // Redirects to school web.html
+      }
+    </script>
+    <script>
+      window.addEventListener("load", () => {
+        const textElement = document.getElementById("animated-text");
+        textElement.classList.add("animate-shake");
+
+        // Optional: Set a timeout to remove the shake animation after a while
+        setTimeout(() => {
+          textElement.classList.remove("animate-shake");
+        }, 2000); // Animasi shake akan berhenti setelah 3 detik
+      });
+    </script>
+
+    <script>
+      function showTime() {
+        const now = new Date();
+        const options = { hour: "2-digit", minute: "2-digit", hour12: false };
+        const time = now.toLocaleTimeString("en-GB", options);
+        document.getElementById("clock").innerHTML = time;
+      }
+
+      window.onload = function () {
+        // Show typing indicator for 5 seconds
+        setTimeout(() => {
+          document.getElementById("typingIndicator").style.display = "none";
+          document.getElementById("chatBubble").classList.remove("opacity-0");
+          document
+            .getElementById("chatBubble")
+            .classList.add("typing-animation");
+        }, 3000);
+
+        // Update the clock
+        showTime();
+      };
     </script>
 
 <script>
-  function navigateToStarspace() {
-      window.location.href = 'starspaceWORKS.html'; // Redirects to starspace.html
-  }
+  window.addEventListener("scroll", function () {
+    const textElement = document.getElementById("resizeText");
+    const rect = textElement.getBoundingClientRect(); // Mendapatkan posisi elemen terhadap viewport
+    const topPosition = rect.top; // Posisi elemen dari atas viewport
 
-  function navigateToSchoolWeb() {
-      window.location.href = 'schoolwebWORKS.html'; // Redirects to school web.html
-  }
-
-  function navigateToNewsApp() {
-      window.location.href = 'newsappWORKS.html'; // Redirects to school web.html
-  }
-
-  function navigateToNotesApp() {
-      window.location.href = 'notesappWORKS.html'; // Redirects to school web.html
-  }
-
-  function navigateToAlarmApp() {
-      window.location.href = 'alarmappWORKS.html'; // Redirects to school web.html
-  }
-
-  function navigateToRecipesApp() {
-      window.location.href = 'recipesappWORKS.html'; // Redirects to school web.html
-  }
-
-  function navigateToRasulApp() {
-      window.location.href = 'prophetrasulWORKS.html'; // Redirects to school web.html
-  }
+    // Mengecek jika elemen sudah mencapai bagian atas viewport (langit-langit)
+    if (topPosition <= 0) {
+      let scrollPosition = window.scrollY; // Posisi scroll saat ini
+      let newSize = Math.max(0, 5 - scrollPosition / 100); // Mengecil hingga 0rem
+      textElement.style.fontSize = newSize + "rem";
+    } else {
+      // Mengembalikan ukuran font ke default saat scroll ke atas dan elemen tidak di langit-langit
+      let scrollPosition = window.scrollY; // Posisi scroll saat ini
+      let newSize = Math.max(0, 5 - scrollPosition / 100);
+      if (newSize > 0) {
+        textElement.style.fontSize = newSize + "rem";
+      } else {
+        textElement.style.fontSize = "6rem";
+      }
+    }
+  });
 </script>
   </body>
 </html>

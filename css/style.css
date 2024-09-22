@@ -8,11 +8,13 @@
   text-decoration: none;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Yrsa:ital,wght@0,300..700;1,300..700&display=swap');
+
 body {
   font-family: "SFMono", sans-serif;
-  color: 0e0;
   -ms-overflow-style: none;
   scrollbar-width: none;
+  background-color: white;
 }
 
 body::-webkit-scrollbar {
@@ -22,6 +24,7 @@ body::-webkit-scrollbar {
 html {
   scroll-behavior: smooth;
 }
+
 
 /* @keyframes fade {
   from {
@@ -46,10 +49,18 @@ html {
   transition: all 400ms ease-in-out;
 }
 
+.yrsa {
+  font-family: "Yrsa", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+
 @font-face {
   font-family: ABCFavorite;
   src: url(/font/ABCFavoritMono-Book.otf);
 }
+
 
 @font-face {
   font-family: TTHoves;
