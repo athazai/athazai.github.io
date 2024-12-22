@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  marker: none;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Yrsa:ital,wght@0,300..700;1,300..700&display=swap');
+
+body {
+  font-family: "SFMono", sans-serif;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  background-color: black;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* @keyframes fade {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+#image-transition {
+  animation: fade 0.5s ease-in-out;
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+  -webkit-transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+  -ms-transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+  -webkit-animation: fade 0.5s ease-in-out;
+} */
+
+.text-transition {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.smooth-scale {
+  transform-origin: left center;
+}
+
+.smooth-scale {
+  transform-origin: left center;
+}
+
+#about {
+  transition: all 400ms ease-in-out;
+}
+
+.yrsa {
+  font-family: "Yrsa", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+/* About */
+.typing-cursor::after {
+  content: '|';
+  animation: cursor 1s infinite step-end;
+}
+
+@keyframes cursor {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.typing-animation {
+  border-right: 2px solid black;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 2s steps(40, end), blink-caret .75s step-end infinite;
+}
+
+/* End about */
+
+
+@font-face {
+  font-family: ABCFavorite;
+  src: url(/font/ABCFavoritMono-Book.otf);
+}
+
+
+@font-face {
+  font-family: TTHoves;
+  src: url(/font/TTHovesProTrial-Regular.ttf);
+}
+
+@font-face {
+  font-family: SFMono;
+  src: url(/font/SF-Mono.dmg);
+}
+
+.kontainer {
+  align-items: center;
+  overflow: hidden;
+  user-select: none;
+}
+
+.scroll {
+  white-space: nowrap;
+}
+
+.scroll div {
+  display: flex;
+}
+
+.RightToLeft {
+  animation: RightToLeft 30s infinite linear;
+}
+
+@keyframes RightToLeft {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.LeftToRight {
+  animation: LeftToRight 30s infinite linear;
+}
+
+@keyframes LeftToRight {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}

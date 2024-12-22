@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/Altinn-DINExp.sfd" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/b802362ecd.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Athallah's Portfolio</title>
+  </head>
+  <body class="bg-gray-100 h-[2000px]">
+    <div class="text-center pt-24 sticky top-0">
+      <h1 id="resizeText" class="resize-text text-6xl font-bold">
+        Scroll to Resize Me!
+      </h1>
+    </div>
+
+    <script>
+      window.addEventListener("scroll", function () {
+        const textElement = document.getElementById("resizeText");
+        let scrollPosition = window.scrollY; // Posisi scroll saat ini
+
+        // Menentukan ukuran font berdasarkan posisi scroll (semakin jauh scroll, semakin kecil)
+        let newSize = Math.max(1.5, 6 - scrollPosition / 100); // Minimum 1.5rem, maksimum 6rem
+        textElement.style.fontSize = newSize + "rem";
+      });
+    </script>
+  </body>
+</html>

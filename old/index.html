@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/Altinn-DINExp.sfd" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/b802362ecd.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Athallah's Portfolio</title>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header id="header-id">
+
+      <!-- Hero Image -->
+      <div class="w-full h-full py-[100px] flex justify-center items-center top-0 sticky">
+        <img
+          class="w-[5%] h-[5%] object-cover rounded-full"
+          src="gif/atha-tiramisu.gif"
+          alt="Hero Video">
+      </div>
+
+      <div class="w-full min-h-screen relative text-center">
+        <div class="w-full sticky top-[27.5%] px-8">
+          <div class="w-full h-full gap-[10px] flex justify-center">
+            <!-- <p
+              id="typing-text-about"
+              class="text-[70px] h-full font-bold text-black text-justify"
+            >ㅤㅤㅤㅤㅤㅤ</p> -->
+            <!-- <p class="w-1/2 text-[25px] text-white text-justify tracking-[-1.5px]">
+            An Undergraduate Computer Science student with experience in
+            Front-end development. My work has primarily involved leading and
+            collaborating on various web projets, focusing on user experience
+            and interface design. 
+            <br> <br>
+            I have experience working within collaborative
+            team structures, using agile methodologies to ensure efficient
+            progress and deliverables across all stages of development. I aim to
+            contribute to impactful and innovative projects in the tech
+            industry.
+            </p> -->
+          </div>
+        </div>
+    </header>
+
+    <!-- Experiences Section -->
+    <section id="about" class="relative flex">
+      <div class="w-full min-h-screen relative text-center">
+        <div class="w-full sticky top-[40%] px-8 py-[50px]">
+          <div class="w-full h-full gap-[10px] flex justify-center">
+            <!-- <p
+              id="typing-text-about"
+              class="text-[70px] h-full font-bold text-black text-justify"
+            >ㅤㅤㅤㅤㅤㅤ</p> -->
+            <p class="w-1/2 text-[25px] text-white text-center tracking-[-1.5px]">
+            experiences.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <div id="work" class="pt-[195px]"></div>
+    <div class="w-full flex flex-col py-[24px] sm:px-[48px] gap-[64px]">
+      <p
+        class="w-full flex justify-end text-[16px] text-stone-800 md:text-[18px] px-[24px] lg:py-0 font-semibold"
+      >
+        Works<span class="text-gray-500">.</span>
+      </p>
+
+      <div class="w-full h-full flex flex-col justify-between gap-24 lg:gap-36">
+        <div class="w-full flex flex-col sm:gap-[48px]">
+          <p
+            class="w-fit text-gray-900 md:text-[50px] font-black mx-[24px] lg:mx-0 py-[2px] px-[12px] border sm:border-0 rounded-full"
+          >
+            WEB
+          </p>
+          <a
+            onclick="navigateToStarspace()"
+            rel="noopener noreferrer"
+            class="cursor-pointer"
+          >
+            <div
+              class="relative w-full h-auto transition duration-300 transform hover:scale-105 flex flex-row justify-between border-b-2 py-[24px] lg:py-[0px] lg:border-2 border-slate-700 lg:rounded-full px-[32px] group"
+            >
+              <p
+                class="text-[25px] lg:text-[58px] text-stone-800 font-medium leading-[1.7]"
+              >
+                STARSPACE
+              </p>
+              <img
+                src="/img/starspace/starspace.png"
+                alt="Hover Image"
+                class="mt-[-20%] inset-0 hidden lg:block w-[40%] h-[40%] right-0 object-cover opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100"
+              />
+              <i
+                class="fa-solid fa-arrow-right items-center flex md:text-[25px]"
+              ></i>
+            </div>
+          </a>
+
+          <a
+            onclick="navigateToSchoolWeb()"
+            rel="noopener noreferrer"
+            class="cursor-pointer"
+          >
+            <div
+              class="relative w-full h-auto transition duration-300 transform hover:scale-105 flex flex-row justify-between border-b-2 py-[24px] lg:py-[0px] lg:border-2 border-slate-700 lg:rounded-full px-[32px] group"
+            >
+              <p
+                class="text-[25px] lg:text-[58px] text-stone-800 font-medium leading-[1.7]"
+              >
+                IDNBS WEB
+              </p>
+              <img
+                src="/img/schoolweb/school-web.png"
+                alt="Hover Image"
+                class="mt-[-20%] inset-0 hidden lg:block w-[40%] h-[40%] right-0 object-cover opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100"
+              />
+              <i
+                class="fa-solid fa-arrow-right items-center flex md:text-[25px]"
+              ></i>
+            </div>
+          </a>
+        </div>
+
+        <div class="w-full flex flex-col sm:gap-[48px]">
+          <p
+            class="w-fit text-gray-900 md:text-[50px] font-black mx-[24px] lg:mx-0 py-[2px] px-[12px] border sm:border-0 rounded-full"
+          >
+            APPS
+          </p>
+
+          <a
+            onclick="navigateToNewsApp()"
+            rel="noopener noreferrer"
+            class="cursor-pointer"
+          >
+            <div
+              class="relative w-full h-auto transition duration-300 transform hover:scale-105 flex flex-row justify-between border-b-2 py-[24px] lg:py-[0px] lg:border-2 border-slate-700 lg:rounded-full px-[32px] group"
+            >
+              <p
+                class="text-[25px] lg:text-[58px] text-stone-800 font-medium leading-[1.7]"
+              >
+                NEWS APP
+              </p>
+              <img
+                src="/img/newsapp/newsapp.png"
+                alt="Hover Image"
+                class="mt-[-20%] inset-0 hidden lg:block w-[30%] h-[30%] right-0 object-cover opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100"
+              />
+              <i
+                class="fa-solid fa-arrow-right items-center flex md:text-[25px]"
+              ></i>
+            </div>
+          </a>
+          <a
+            onclick="navigateToNotesApp()"
+            rel="noopener noreferrer"
+            class="cursor-pointer"
+          >
+            <div
+              class="relative w-full h-auto transition duration-300 transform hover:scale-105 flex flex-row justify-between border-b-2 py-[24px] lg:py-[0px] lg:border-2 border-slate-700 lg:rounded-full px-[32px] group"
+            >
+              <p
+                class="text-[25px] lg:text-[58px] text-stone-800 font-medium leading-[1.7]"
+              >
+                NOTES APP
+              </p>
+              <img
+                src="/img/notesapp/notesapp.png"
+                alt="Hover Image"
+                class="mt-[-20%] inset-0 hidden lg:block w-[30%] h-[30%] right-0 object-cover opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100"
+              />
+              <i
+                class="fa-solid fa-arrow-right items-center flex md:text-[25px]"
+              ></i>
+            </div>
+          </a>
+          <a
+            onclick="navigateToAlarmApp()"
+            rel="noopener noreferrer"
+            class="cursor-pointer"
+          >
+            <div
+              class="relative w-full h-auto transition duration-300 transform hover:scale-105 flex flex-row justify-between border-b-2 py-[24px] lg:py-[0px] lg:border-2 border-slate-700 lg:rounded-full px-[32px] group"
+            >
+              <p
+                class="text-[25px] lg:text-[58px] text-stone-800 font-medium leading-[1.7]"
+              >
+                ALARM APP
+              </p>
+              <img
+                src="/img/alarmapp/alarmapp.png"
+                alt="Hover Image"
+                class="mt-[-20%] inset-0 hidden lg:block w-[30%] h-[30%] right-0 object-cover opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100"
+              />
+              <i
+                class="fa-solid fa-arrow-right items-center flex md:text-[25px]"
+              ></i>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div id="contact" class="pt-[95px] transition-all duration-500 ease-in-out">
+    </div>
+    <div class="w-full flex flex-col p-[24px] sm:p-[48px] gap-[64px]">
+      <p
+        class="w-full flex justify-end text-[16px] md:text-[18px] font-semibold text-stone-800"
+      >
+        Contact<span class="text-gray-500">.</span>
+      </p>
+      <div class="w-full h-auto flex flex-col gap-[16px]">
+        <div class="flex flex-col">
+          <p
+            class="text-[20px] lg:text-[58px] text-stone-800 font-medium flex items-center leading-[1.7]"
+          >
+            GET IN TOUCH?
+          </p>
+          <p class="text-stone-800">Project?</p>
+          <p class="text-stone-800">Collaboration?</p>
+          <p class="text-stone-800">Or whatever</p>
+        </div>
+        <div class="w-[100%] h-[1px] bg-stone-800"></div>
+        <div class="w-full flex">
+          <div class="w-full h-auto flex flex-col">
+            <p class="text-stone-800 font-medium">Find me at</p>
+            <a
+              href="mailto:athallahzaidan90@gmail.com"
+              target="_blank"
+              class="text-stone-800 underline hover:underline-offset-2"
+              >@athallahzaidan90@gmail.com</a
+            >
+            <a
+              href="https://www.linkedin.com/in/athallah-zaidan/"
+              target="_blank"
+              class="text-stone-800 underline hover:underline-offset-2"
+              >linkedin.com/in/athallah-zaidan</a
+            >
+          </div>
+          <div class="w-full justify-end hidden sm:flex">
+            <div class="flex flex-col justify-center text-stone-800">
+              <p class="w-full flex justify-end">© 2024</p>
+              <p>Design and developed by</p>
+              <p class="w-full flex justify-end text-black">
+                Athallah Zaidan A
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="w-full h-full flex justify-between items-end">
+          <div
+            class="w-full h-fit flex justify-end items-end pr-[72px] pb-[64px]"
+          >
+            <div
+              id="chatBubble"
+              class="chat chat-end opacity-0 transition-all duration-700"
+            >
+              <p
+                class="chat-bubble max-w-[100%] text-gray-200 flex items-center"
+              >
+                Hello, Fellas
+                <span
+                  id="clock"
+                  class="chat-footer opacity-50 text-[12px] pt-[15px] w-fit flex items-end justify-end pl-[24px]"
+                ></span>
+              </p>
+            </div>
+            <div class="avatar indicator">
+              <span
+                id="typingIndicator"
+                class="indicator-item badge badge-secondary bg-gray-600 border border-gray-600 text-white py-[12px] px-[15px]"
+              >
+                <span class="animate-pulse">typing…</span>
+              </span>
+              <div class="h-20 w-20 rounded-[100%] border border-[2.5px]">
+                <img
+                  class="mt-[5px] p-[5px]"
+                  alt="Atha"
+                  src="img/atha-tiramisu.png"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <footer></footer>
+
+    <script>
+      const mbrsText = document.getElementById("mbrs-text");
+      const maxScale = 1;
+      const minScale = 0.4;
+
+      function lerp(start, end, factor) {
+        return start + (end - start) * factor;
+      }
+
+      function updateHeaderSize() {
+        const scrollPosition =
+          window.pageYOffset || document.documentElement.scrollTop;
+        const scrollMax = 300;
+
+        const scrollProgress = Math.min(
+          Math.max(scrollPosition / scrollMax, 0),
+          1
+        );
+        const targetScale = lerp(maxScale, minScale, scrollProgress);
+
+        mbrsText.style.transform = `scale(${targetScale})`;
+        requestAnimationFrame(updateHeaderSize);
+      }
+
+      requestAnimationFrame(updateHeaderSize);
+
+      // Smooth scroll for navigation
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+          });
+        });
+      });
+    </script>
+
+    <!-- Header -->
+    <script>
+      const athaText = document.getElementById("atha-text");
+      const maxSize = 200;
+      const minSize = 70;
+
+      // Menggunakan requestAnimationFrame untuk animasi yang lebih smooth
+      let ticking = false;
+
+      function updateSize(scrollPos) {
+        const scrollProgress = Math.min(Math.max(scrollPos / 300, 0), 1);
+        const fontSize = maxSize - scrollProgress * (maxSize - minSize);
+
+        // Aplikasikan perubahan ukuran
+        athaText.style.fontSize = `${fontSize}px`;
+        ticking = false;
+      }
+
+      window.addEventListener(
+        "scroll",
+        () => {
+          const scrollPos = window.scrollY;
+
+          if (!ticking) {
+            window.requestAnimationFrame(() => {
+              updateSize(scrollPos);
+            });
+
+            ticking = true;
+          }
+        },
+        { passive: true }
+      );
+
+      // Set ukuran awal
+      athaText.style.fontSize = `${maxSize}px`;
+    </script>
+
+    <script>
+      const typingTextElement = document.getElementById("atha-text");
+      const aboutSection = document.getElementById("header-id");
+      const phrases = ["it's me!", "atha."];
+      let phraseIndex = 0;
+      let charIndex = 0;
+      let isDeleting = false;
+      let isEnd = false;
+      let hasStarted = false; // Flag untuk memastikan animasi hanya mulai sekali
+
+      function type() {
+        const currentPhrase = phrases[phraseIndex];
+
+        if (isDeleting) {
+          typingTextElement.textContent = currentPhrase.substring(
+            0,
+            charIndex - 1
+          );
+          charIndex--;
+        } else {
+          typingTextElement.textContent = currentPhrase.substring(
+            0,
+            charIndex + 1
+          );
+          charIndex++;
+        }
+
+        if (!isDeleting && charIndex === currentPhrase.length) {
+          setTimeout(() => {
+            isDeleting = true;
+          }, 1500);
+        } else if (isDeleting && charIndex === 0) {
+          isDeleting = false;
+          phraseIndex = (phraseIndex + 1) % phrases.length;
+        }
+
+        const typingSpeed = isDeleting ? 50 : 50;
+        setTimeout(type, typingSpeed);
+      }
+
+      // Membuat Intersection Observer
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            // Cek apakah section about terlihat
+            if (entry.isIntersecting && !hasStarted) {
+              hasStarted = true; // Set flag agar animasi tidak diulang
+              // Reset dan mulai animasi
+              typingTextElement.textContent = "";
+              charIndex = 0;
+              setTimeout(() => {
+                type();
+              }, 0); // Delay kecil setelah section terlihat
+
+              observer.unobserve(entry.target); // Hentikan observing setelah trigger
+            }
+          });
+        },
+        {
+          threshold: 0.1, // Trigger saat 10% section terlihat
+        }
+      );
+
+      // Mulai observing section about
+      observer.observe(aboutSection);
+    </script>
+
+    <!-- End Header -->
+
+    <script>
+      function smoothScroll(targetId) {
+        const target = document.getElementById(targetId);
+        target.scrollIntoView({ behavior: "smooth" });
+      }
+    </script>
+
+    <script>
+      function navigateToHome() {
+        window.location.href = "index.html"; // Redirects to starspace.html
+      }
+
+      function navigateToAbout() {
+        window.location.href = "about.html"; // Redirects to starspace.html
+      }
+
+      function navigateToWorks() {
+        window.location.href = "works.html"; // Redirects to starspace.html
+      }
+
+      function navigateToStarspace() {
+        window.location.href = "/details/starspaceWORKS.html"; // Redirects to starspace.html
+      }
+
+      function navigateToSchoolWeb() {
+        window.location.href = "/details/schoolwebWORKS.html"; // Redirects to school web.html
+      }
+
+      function navigateToNewsApp() {
+        window.location.href = "/details/newsappWORKS.html"; // Redirects to school web.html
+      }
+
+      function navigateToNotesApp() {
+        window.location.href = "/details/notesappWORKS.html"; // Redirects to school web.html
+      }
+
+      function navigateToAlarmApp() {
+        window.location.href = "/details/alarmappWORKS.html"; // Redirects to school web.html
+      }
+
+      function navigateToRecipesApp() {
+        window.location.href = "/details/recipesappWORKS.html"; // Redirects to school web.html
+      }
+
+      function navigateToRasulApp() {
+        window.location.href = "/details/prophetrasulWORKS.html"; // Redirects to school web.html
+      }
+    </script>
+    <script>
+      window.addEventListener("load", () => {
+        const textElement = document.getElementById("animated-text");
+        textElement.classList.add("animate-shake");
+
+        // Optional: Set a timeout to remove the shake animation after a while
+        setTimeout(() => {
+          textElement.classList.remove("animate-shake");
+        }, 2000); // Animasi shake akan berhenti setelah 3 detik
+      });
+    </script>
+
+    <script>
+      function showTime() {
+        const now = new Date();
+        const options = { hour: "2-digit", minute: "2-digit", hour12: false };
+        const time = now.toLocaleTimeString("en-GB", options);
+        document.getElementById("clock").innerHTML = time;
+      }
+
+      window.onload = function () {
+        // Show typing indicator for 5 seconds
+        setTimeout(() => {
+          document.getElementById("typingIndicator").style.display = "none";
+          document.getElementById("chatBubble").classList.remove("opacity-0");
+          document
+            .getElementById("chatBubble")
+            .classList.add("typing-animation");
+        }, 3000);
+
+        // Update the clock
+        showTime();
+      };
+    </script>
+
+    <!-- Header Type Changers -->
+    <!-- <script>
+      function typeWriter() {
+        const textElement = document.getElementById("typing-text");
+        const texts = ["hello, it's me!", "atha.", "mobile / web?", "yes."];
+        let textIndex = 0;
+        let charIndex = 0;
+
+        function type() {
+          const currentText = texts[textIndex];
+
+          if (charIndex < currentText.length) {
+            textElement.textContent += currentText.charAt(charIndex);
+            charIndex++;
+            setTimeout(type, 80); // Kecepatan mengetik
+          } else {
+            setTimeout(erase, 2000); // Waktu tunggu sebelum menghapus
+          }
+        }
+
+        function erase() {
+          const currentText = textElement.textContent;
+
+          if (currentText.length > 0) {
+            textElement.textContent = currentText.slice(0, -1);
+            setTimeout(erase, 35); // Kecepatan menghapus
+          } else {
+            textIndex = (textIndex + 1) % texts.length;
+            charIndex = 0;
+            setTimeout(type, 300); // Jeda sebelum mengetik teks berikutnya
+          }
+        }
+
+        // Mulai efek mengetik
+        type();
+      }
+
+      // Jalankan saat halaman dimuat
+      document.addEventListener("DOMContentLoaded", typeWriter);
+    </script> -->
+  </body>
+</html>

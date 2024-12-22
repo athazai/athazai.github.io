@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MB Studio Clone</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .text-transition {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .smooth-scale {
+            transform-origin: left center;
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <!-- Header Section -->
+    <header class="bg-black">
+        <div class="text-white">
+            <div class="w-full flex justify-between p-4 px-6 gap-6 text-[16px]">
+                <a href="#" class="w-full border-t border-white pt-2">Work</a>
+                <a href="#" class="w-full border-t border-white pt-2">About</a>
+                <a href="#" class="w-full border-t border-white pt-2">Services</a>
+                <a href="#" class="w-full border-t border-white pt-2">Contact</a>
+            </div>
+        </div>
+
+        <!-- Main Logo -->
+        <div class="sticky top-0 z-50">
+            <p id="mbrs-text" class="text-[250px] font-bold text-white px-6 text-transition smooth-scale">
+                mbrs.
+            </p>
+        </div>
+
+        <!-- Hero Image -->
+        <div class="w-full h-screen">
+            <img class="w-full h-full object-cover" src="your-hero-image.jpg" alt="Hero Image" />
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="relative bg-white">
+        <div class="max-w-[1400px] mx-auto">
+            <div class="min-h-screen relative">
+                <div class="sticky top-0 py-20">
+                    <div class="w-[50%] p-6">
+                        <p class="text-[30px] text-black text-justify">
+                            Design Studio focused on branding and digital experiences. We partner with companies to create 
+                            meaningful solutions through design.
+                        </p>
+                    </div>
+                </div>
+                <div class="h-[200vh]"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Section -->
+    <section id="work" class="bg-white py-20">
+        <div class="max-w-[1400px] mx-auto px-6">
+            <div class="grid grid-cols-2 gap-10">
+                <!-- Project Items -->
+                <div class="project-item">
+                    <div class="aspect-video overflow-hidden">
+                        <img src="project1.jpg" alt="Project 1" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+                    </div>
+                    <div class="mt-4">
+                        <h3 class="text-xl font-bold">Project Title</h3>
+                        <p class="text-gray-600">Category</p>
+                    </div>
+                </div>
+                <!-- Add more project items as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-black text-white py-20">
+        <div class="max-w-[1400px] mx-auto px-6">
+            <div class="grid grid-cols-2 gap-10">
+                <div>
+                    <h2 class="text-4xl font-bold mb-6">Get in touch</h2>
+                    <a href="mailto:info@mbrs.studio" class="text-xl hover:underline">info@mbrs.studio</a>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Follow us</h3>
+                    <div class="flex gap-4">
+                        <a href="#" class="hover:underline">Instagram</a>
+                        <a href="#" class="hover:underline">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const mbrsText = document.getElementById('mbrs-text');
+        const maxScale = 1;
+        const minScale = 0.4;
+
+        function lerp(start, end, factor) {
+            return start + (end - start) * factor;
+        }
+
+        function updateHeaderSize() {
+            const scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+            const scrollMax = 300;
+            
+            const scrollProgress = Math.min(Math.max(scrollPosition / scrollMax, 0), 1);
+            const targetScale = lerp(maxScale, minScale, scrollProgress);
+            
+            mbrsText.style.transform = `scale(${targetScale})`;
+            requestAnimationFrame(updateHeaderSize);
+        }
+
+        requestAnimationFrame(updateHeaderSize);
+
+        // Smooth scroll for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

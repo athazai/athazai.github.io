@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Apple Clone - Enhanced</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+
+        .fade-in {
+            opacity: 0;
+            transition: opacity 1s ease-in;
+        }
+
+        .fade-in.appear {
+            opacity: 1;
+        }
+
+        .slide-up {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 0.8s ease;
+        }
+
+        .slide-up.appear {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .parallax {
+            transition: transform 0.5s cubic-bezier(0.33, 1, 0.68, 1);
+        }
+
+        .sticky-nav {
+            backdrop-filter: blur(20px);
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .product-scroll {
+            will-change: transform;
+            transition: transform 0.3s ease-out;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+
+        .float-animation {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .hero-text {
+            background: linear-gradient(90deg, #ffffff, #7a7a7a, #ffffff);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: shine 3s linear infinite;
+        }
+
+        @keyframes shine {
+            to { background-position: 200% center; }
+        }
+    </style>
+</head>
+<body class="bg-black text-white overflow-x-hidden">
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 transition-all duration-300" id="main-nav">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-12">
+                <div class="flex items-center space-x-8">
+                    <a href="#" class="text-white hover:opacity-75 transition-opacity">
+                        <svg class="h-5" viewBox="0 0 14 44" fill="currentColor">
+                            <!-- Apple Logo SVG -->
+                            <path d="M13.0729 17.6825C12.1545 18.6841 10.8481 19.3099 9.62815 19.1714C9.45003 17.9443 9.88B3 16.8157 10.7435 15.8982C11.6619 14.8966 13.0517 14.3061 14.1571 14.1829C14.3037 15.4554 13.8683 16.6809 13.0729 17.6825Z"/>
+                        </svg>
+                    </a>
+                    <div class="hidden md:flex space-x-6">
+                        <a href="#" class="text-sm hover:opacity-75 transition-opacity">About</a>
+                        <a href="#" class="text-sm hover:opacity-75 transition-opacity">Projects</a>
+                        <a href="#" class="text-sm hover:opacity-75 transition-opacity">Experiences</a>
+                        <a href="#" class="text-sm hover:opacity-75 transition-opacity">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen flex items-center justify-center relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-b from-black to-gray-900"></div>
+        <div class="relative z-10 text-center">
+            <h1 class="text-6xl md:text-8xl font-bold mb-6 hero-text">Atha.</h1>
+            <p class="text-xl md:text-2xl mb-8 opacity-90">Problem Solver.</p>
+        </div>
+        <!-- <div class="absolute bottom-0 w-full">
+            <img src="img/atha-1.jpg" alt="iPhone 15 Pro" class="w-full max-w-3xl mx-auto float-animation">
+        </div> -->
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-20 relative">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-10">
+                <!-- Feature 1 -->
+                <div class="slide-up">
+                    <div class="bg-gray-900 rounded-2xl p-8 transform hover:scale-105 transition-all">
+                        <h3 class="text-2xl font-bold mb-4">A17 Pro Chip</h3>
+                        <p class="text-gray-400">The fastest chip ever in a smartphone, delivering incredible performance.</p>
+                    </div>
+                </div>
+                <!-- Feature 2 -->
+                <div class="slide-up" style="transition-delay: 200ms;">
+                    <div class="bg-gray-900 rounded-2xl p-8 transform hover:scale-105 transition-all">
+                        <h3 class="text-2xl font-bold mb-4">Pro Camera</h3>
+                        <p class="text-gray-400">48MP main camera. For breathtaking detail in every shot.</p>
+                    </div>
+                </div>
+                <!-- Feature 3 -->
+                <div class="slide-up" style="transition-delay: 400ms;">
+                    <div class="bg-gray-900 rounded-2xl p-8 transform hover:scale-105 transition-all">
+                        <h3 class="text-2xl font-bold mb-4">All-Day Battery</h3>
+                        <p class="text-gray-400">Up to 29 hours of video playback on a single charge.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Showcase -->
+    <section class="min-h-screen relative py-20">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-4xl md:text-6xl font-bold mb-20 text-center hero-text">Choose Your Style</h2>
+            <div class="grid md:grid-cols-2 gap-10">
+                <!-- Product 1 -->
+                <div class="fade-in">
+                    <div class="bg-gradient-to-br from-purple-900 to-indigo-900 rounded-3xl p-10 transform hover:scale-105 transition-all">
+                        <h3 class="text-3xl font-bold mb-4">iPhone 15 Pro</h3>
+                        <p class="mb-6">From $999</p>
+                        <img src="img/starspace/starspace.png" alt="iPhone 15 Pro" class="w-full rounded-xl shadow-2xl">
+                    </div>
+                </div>
+                <!-- Product 2 -->
+                <div class="fade-in" style="transition-delay: 200ms;">
+                    <div class="bg-gradient-to-br from-gray-900 to-black rounded-3xl p-10 transform hover:scale-105 transition-all">
+                        <h3 class="text-3xl font-bold mb-4">iPhone 15 Pro Max</h3>
+                        <p class="mb-6">From $1199</p>
+                        <img src="img/starspace/starspace.png" alt="iPhone 15 Pro Max" class="w-full rounded-xl shadow-2xl">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specifications -->
+    <section class="py-20 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-4xl md:text-6xl font-bold mb-20 text-center hero-text">Tech Specs</h2>
+            <div class="grid md:grid-cols-2 gap-20">
+                <div class="space-y-8">
+                    <div class="slide-up">
+                        <h3 class="text-2xl font-bold mb-4">Display</h3>
+                        <ul class="space-y-3 text-gray-400">
+                            <li>• 6.7‑inch Super Retina XDR display</li>
+                            <li>• ProMotion technology with adaptive refresh up to 120Hz</li>
+                            <li>• Always-On display</li>
+                        </ul>
+                    </div>
+                    <div class="slide-up">
+                        <h3 class="text-2xl font-bold mb-4">Camera</h3>
+                        <ul class="space-y-3 text-gray-400">
+                            <li>• 48MP Main camera</li>
+                            <li>• 12MP Ultra Wide</li>
+                            <li>• 12MP Telephoto</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="space-y-8">
+                    <div class="slide-up">
+                        <h3 class="text-2xl font-bold mb-4">Power</h3>
+                        <ul class="space-y-3 text-gray-400">
+                            <li>• A17 Pro chip</li>
+                            <li>• 6-core CPU</li>
+                            <li>• 6-core GPU</li>
+                        </ul>
+                    </div>
+                    <div class="slide-up">
+                        <h3 class="text-2xl font-bold mb-4">Battery</h3>
+                        <ul class="space-y-3 text-gray-400">
+                            <li>• Up to 29 hours video playback</li>
+                            <li>• Fast charging capable</li>
+                            <li>• MagSafe wireless charging</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Scroll Reveal Initialization
+        ScrollReveal().reveal('.slide-up', {
+            duration: 1000,
+            distance: '50px',
+            origin: 'bottom',
+            interval: 200
+        });
+
+        ScrollReveal().reveal('.fade-in', {
+            duration: 1000,
+            opacity: 0,
+            interval: 200
+        });
+
+        // Sticky Navigation
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('main-nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('sticky-nav');
+            } else {
+                nav.classList.remove('sticky-nav');
+            }
+        });
+
+        // Parallax Effect
+        document.addEventListener('mousemove', (e) => {
+            const moveX = (e.pageX - window.innerWidth/2) * 0.005;
+            const moveY = (e.pageY - window.innerHeight/2) * 0.005;
+            
+            document.querySelectorAll('.parallax').forEach(element => {
+                element.style.transform = `translate(${moveX}px, ${moveY}px)`;
+            });
+        });
+    </script>
+</body>
+</html>

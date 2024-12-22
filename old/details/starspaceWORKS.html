@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Athallah's Portfolio</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="src/Altinn-DINExp.sfd" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script
+      src="https://kit.fontawesome.com/b802362ecd.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      .image-container {
+        position: relative;
+        overflow: hidden;
+        border-radius: 0.5rem;
+      }
+
+      .image-container img {
+        top: 0;
+        left: 0;
+        z-index: 1;
+        animation: changeImage 6s infinite;
+      }
+
+      .image-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 5rem;
+        font-weight: bold;
+        background-size: cover;
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        z-index: 2;
+        animation: changeImage 6s infinite;
+      }
+
+      @keyframes changeImage {
+        0%,
+        100% {
+          background-image: url("/img/starspace/starspace.png");
+        }
+        33% {
+          background-image: url("/img/schoolweb/school-web.png");
+        }
+        66% {
+          background-image: url("/img/newsapp/newsapp.png");
+        }
+      }
+    </style>
+  </head>
+  <body class="flex">
+    <div
+      class="sm:w-1/2 bg-white text-white p-[24px] lg:p-16 fixed flex justify-between flex-col h-full"
+    >
+      <a
+        onclick="navigateToHome()"
+        class="text-3xl text-slate-800 font-medium cursor-pointer"
+        >Atha.</a
+      >
+      <p
+        id="dynamic-text"
+        class="text-[14px] sm:text-[18px] xl:text-[20px] sm:hidden text-slate-600 font-medium text-justify px-4"
+      >
+        Starlink's dynamic landing page is meticulously designed to accelerate
+        market growth and enhance revenue opportunities by effectively
+        showcasing the advanced and innovative features of Telkomsat's internet
+        solutions, highlighting their cutting-edge technology and superior
+        performance.
+      </p>
+      <img id="image-transition" src="/img/starspace/starspace.png" alt="" />
+      <p
+        class="text-[14px] sm:text-[18px] xl:text-[18px] sm:hidden text-slate-600 font-medium text-justify px-4"
+      >
+        <span class="font-semibold text-slate-700">Responsibilities:</span>
+        <br />
+        Product Page, Detail Product Page, News Page, FAQ Page
+      </p>
+
+      <p class="text-full text-slate-800 font-bold">Website Starspace.</p>
+    </div>
+
+    <div
+      class="sm:w-1/2 h-full ml-auto scrollable overflow-y-scroll sm:flex flex-col justify-between px-8 lg:px-16"
+    >
+      <div
+        id="target-section-1"
+        class="w-full h-screen flex flex-col justify-between pt-8 lg:pt-16"
+      >
+        <div class="w-fit h-full flex justify-between">
+          <div
+            onclick="navigateToHome()"
+            class="w-fit h-fit border rounded-[10px] px-4 py-2 cursor-pointer"
+          >
+            <i
+              class="fa-solid fa-angle-left text-slate-800 text-[15px] sm:text-[20px] tracking-[1px] flex"
+            ></i>
+          </div>
+        </div>
+
+        <div class="w-full h-full fle flex-col gap-[24px]">
+          <div
+            class="w-full flex flex-col gap-[16px] sm:gap-[24px] lg:gap-[48px]"
+          >
+            <p
+              class="text-[14px] sm:text-[18px] xl:text-[20px] text-slate-600 font-medium text-justify"
+            >
+              Starlink's dynamic landing page is meticulously designed to
+              accelerate market growth and enhance revenue opportunities by
+              effectively showcasing the advanced and innovative features of
+              Telkomsat's internet solutions, highlighting their cutting-edge
+              technology and superior performance.
+            </p>
+            <p
+              class="text-[14px] sm:text-[18px] xl:text-[18px] text-slate-600 font-medium text-justify"
+            >
+              <span class="font-medium text-slate-700">Responsibilities:</span>
+              <br />
+              Product Page, Detail Product Page, News Page, FAQ Page
+            </p>
+            <p
+              class="text-[14px] sm:text-[18px] xl:text-[18px] text-slate-600 font-medium text-justify"
+            >
+              <span class="font-medium text-slate-700">Technologies:</span>
+              <br />
+              Laravel, TailwindCSS, Flowbite, LeafletJS, Javascript, Jquery,
+              Postman.
+            </p>
+          </div>
+        </div>
+
+        <p class="w-full text-full h-full text-white font-bold flex items-end">
+          -
+        </p>
+      </div>
+      <div
+        id="target-section-2"
+        class="w-full h-screen flex flex-col justify-between"
+      >
+        <div
+          class="w-fit h-full flex justify-between underline underline-offset-4 text-slate-400"
+        >
+          <p class="text-[11px] text-white">.</p>
+        </div>
+
+        <div class="w-full h-full flex flex-col gap-[24px]">
+          <div
+            class="w-full flex flex-col gap-[16px] sm:gap-[24px] lg:gap-[48px]"
+          >
+            <p
+              class="text-[14px] sm:text-[18px] xl:text-[20px] text-slate-600 font-medium text-justify"
+            >
+              The next-generation Starlink monitoring dashboard (Starspace Stage
+              2) empowers users with remote monitoring capabilities for their
+              Starlink devices. This innovative solution eliminates the need for
+              physical proximity, ensuring seamless oversight from any location.
+            </p>
+            <p
+              class="text-[14px] sm:text-[18px] xl:text-[18px] text-slate-600 font-medium text-justify"
+            >
+              <span class="font-medium text-slate-700">Responsibilities:</span>
+              <br />
+              Product Page, Detail Product Page, News Page, FAQ Page
+            </p>
+            <p
+              class="text-[14px] sm:text-[18px] xl:text-[18px] text-slate-600 font-medium text-justify"
+            >
+              <span class="font-medium text-slate-700">Technologies:</span>
+              <br />
+              Laravel, TailwindCSS, Flowbite, LeafletJS, Javascript, Jquery,
+              Postman.
+            </p>
+          </div>
+        </div>
+
+        <p class="w-full text-full h-full text-white font-bold flex items-end">
+          -
+        </p>
+      </div>
+      <div
+        id="target-section-3"
+        class="w-full h-screen flex flex-col justify-between pb-16"
+      >
+        <div
+          class="w-fit h-full flex justify-between underline underline-offset-4 text-slate-400"
+        >
+          <p class="text-[11px] text-white">.</p>
+        </div>
+
+        <div class="w-full h-fit flex flex-col">
+          <div
+            class="w-full flex flex-col gap-[16px] sm:gap-[24px] lg:gap-[48px]"
+          >
+            <p
+              class="text-[14px] sm:text-[18px] xl:text-[20px] text-slate-600 font-medium text-justify"
+            >
+              Building upon the success of Stage 2, the Starlink monitoring
+              dashboard (stage 3) introduces a suite of enhanced features
+              designed to streamline the user experience. This next-level
+              iteration empowers users with even greater ease and control in
+              monitoring their satellite operations.
+            </p>
+            <p
+              class="text-[14px] sm:text-[18px] xl:text-[18px] text-slate-600 font-medium text-justify"
+            >
+              <span class="font-medium text-slate-700">Responsibilities:</span>
+              <br />
+              Product Page, Detail Product Page, News Page, FAQ Page
+            </p>
+            <p
+              class="text-[14px] sm:text-[18px] xl:text-[18px] text-slate-600 font-medium text-justify"
+            >
+              <span class="font-medium text-slate-700">Technologies:</span>
+              <br />
+              Laravel, TailwindCSS, Flowbite, LeafletJS, Javascript, Jquery,
+              Postman.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="w-full h-full flex justify-center items-end mb-[24px] sm:mb-[0px]"
+        >
+          <a
+            href="https://starspace.telkomsat.co.id/"
+            class="w-fit h-fit border rounded-[5px] px-16 py-2 cursor-pointer bg-slate-800 text-white transition duration-500 ease-in-out transform hover:bg-red-600 hover:scale-105 hover:shadow-xl hover:text-white"
+          >
+            <p class="text-[15px] tracking-[px]">Check Details!</p>
+          </a>
+        </div>
+      </div>
+    </div>
+    <script>
+      function scrollToSection() {
+        document
+          .getElementById("target-section")
+          .scrollIntoView({ behavior: "smooth" });
+      }
+      function navigateToHome() {
+        window.location.href = "/index.html"; // Redirects to starspace.html
+      }
+    </script>
+    <script>
+      const imageTransition = document.getElementById("image-transition");
+      const dynamicText = document.getElementById("dynamic-text");
+
+      // Fungsi untuk mengubah gambar berdasarkan kondisi if-else
+      function changeImageBasedOnSection(entry) {
+        if (entry.isIntersecting) {
+          if (entry.target.id === "target-section-1") {
+            imageTransition.src = "/img/starspace/starspace.png";
+          } else if (entry.target.id === "target-section-2") {
+            imageTransition.src = "/img/starspace/starspace-dua.png";
+          } else if (entry.target.id === "target-section-3") {
+            imageTransition.src = "/img/starspace/starspace-tiga.png";
+          }
+        }
+      }
+
+      function changeTextBasedOnSection(entry) {
+        if (entry.isIntersecting) {
+          // Animasi fade out sebelum mengubah teks
+          dynamicText.classList.add("opacity-0");
+
+          setTimeout(() => {
+            // Mengubah teks sesuai dengan target section yang terlihat
+            if (entry.target.id === "target-section-1") {
+              dynamicText.innerHTML =
+                "Starlink's dynamic landing page is meticulously designed to accelerate market growth and enhance revenue opportunities by effectively showcasing the advanced and innovative features of Telkomsat's internet solutions, highlighting their cutting-edge technology and superior performance.";
+            } else if (entry.target.id === "target-section-2") {
+              dynamicText.innerHTML =
+                "The next-generation Starlink monitoring dashboard (Starspace Stage 2) empowers users with remote monitoring capabilities for their Starlink devices. This innovative solution eliminates the need for physical proximity, ensuring seamless oversight from any location.";
+            } else if (entry.target.id === "target-section-3") {
+              dynamicText.innerHTML =
+                "Building upon the success of Stage 2, the Starlink monitoring dashboard (stage 3) introduces a suite of enhanced features designed to streamline the user experience. This next-level iteration empowers users with even greater ease and control in monitoring their satellite operations.";
+            }
+
+            // Animasi fade in setelah teks berubah
+            dynamicText.classList.remove("opacity-0");
+            dynamicText.classList.add("opacity-100");
+          }); // Waktu untuk animasi fade out
+        }
+      }
+
+      // Buat observer untuk memantau bagian halaman yang terlihat
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              changeImageBasedOnSection(entry);
+              changeTextBasedOnSection(entry);
+            }
+          });
+        },
+        {
+          threshold: 0.5, // Setengah div harus terlihat untuk memicu perubahan gambar
+        }
+      );
+
+      // Amati setiap section
+      observer.observe(document.getElementById("target-section-1"));
+      observer.observe(document.getElementById("target-section-2"));
+      observer.observe(document.getElementById("target-section-3"));
+    </script>
+  </body>
+</html>
